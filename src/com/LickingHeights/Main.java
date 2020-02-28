@@ -1,9 +1,13 @@
 package com.LickingHeights;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-
+    System.out.println("Drake Equation");
+    drakeEquation();
+    
 
     }
 
@@ -28,10 +32,45 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     double f_c;
     int L;
 
-    N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L
+    Scanner
+    Keyboard = new Scanner (System.in);
+
+
+    System.out.println("How many stars are formed per year? options:1-6");
+    rStar = Keyboard.nextInt();
+
+    System.out.println("How many stars formed will have planets? options:0.2 or 0.5 ?");
+    f_p = Keyboard.nextDouble();
+
+    System.out.println("How many exoplanets are there?");
+    numberOfExoplanets = Keyboard.nextInt();
+
+    System.out.println("What percentage of these planets will develop life? options:100% ");
+    f_l = Keyboard.nextDouble();
+
+    System.out.println("What percentage of these plants will develop intelligent life? options:100%");
+    f_i = Keyboard.nextDouble();
+
+    System.out.println("what percentage of intelligent life will be able to communicate? options:10%-20%");
+    f_c= Keyboard.nextDouble();
+
+    System.out.println("How long will it last? options:1000-100,000 years");
+    L = Keyboard.nextInt();
+
+    System.out.println("How many intelligent species will be able to communicate with us?");
+    N = Keyboard.nextInt();
+
+
+
+
+    System.out.
+
+    N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L;
 
     System.out.println("The number of intelligent species that are out there \n" +
             " that can communicate with us is: " + N);
+    
+
     }
 
 }
